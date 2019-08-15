@@ -2,11 +2,33 @@
 
 header{
     .setDisplay(flex, space-between);
-    nav{
-        .setDisplay(flex,space-evenly);
-        width:100%;
-    }//close nav
+    width:100%;
+    border-bottom:2px gray dashed;
+    padding:2rem 0 2rem 0;
+    div{
+        display:flex;
 
+
+
+        h1{
+            width:50%;
+        }//h1
+
+        nav{
+            .setDisplay(flex,space-between);
+            width:50%;
+            justify-content: flex-end;
+            justify-content: space-around;
+            align-items: center;
+        }//close nav
+            a{
+                text-decoration:none;
+                font-size:1.5rem;
+                font-weight:bold;
+                color:gray;
+
+            }//a
+    }//div
 
 
 
