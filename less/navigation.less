@@ -2,13 +2,22 @@
 
 header{
     .setDisplay(flex, space-between);
+    flex-direction:column;
     width:100%;
     .dashedBottom();
     padding:2rem 0 2rem 0;
+    
     div{
         display:flex;
         h1{
             width:50%;
+            @media @mobile{
+                width:100%;
+                text-align: center;
+            }
+            // @media screen and (max-width:500px){
+            //     width:100%;
+            // }
         }//h1
         nav{
             .setDisplay(flex,space-between);
@@ -16,6 +25,11 @@ header{
             justify-content: flex-end;
             justify-content: space-around;
             align-items: center;
+            @media @mobile{
+                width:100%;
+                justify-content: space-evenly;
+                margin:1rem 0 0 0;
+            }//media
         }//close nav
             a{
                 text-decoration:none;
@@ -23,5 +37,9 @@ header{
                 font-weight:bold;
                 color:@shark;
             }//a
+        @media @mobile{
+            flex-direction:column;
+            align-items:center;
+        }//media   
     }//div
 }//close header
