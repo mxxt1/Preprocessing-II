@@ -3,17 +3,13 @@
 header{
     .setDisplay(flex, space-between);
     width:100%;
-    border-bottom:2px gray dashed;
+    .dashedBottom();
     padding:2rem 0 2rem 0;
     div{
         display:flex;
-
-
-
         h1{
             width:50%;
         }//h1
-
         nav{
             .setDisplay(flex,space-between);
             width:50%;
@@ -25,12 +21,7 @@ header{
                 text-decoration:none;
                 font-size:1.5rem;
                 font-weight:bold;
-                color:gray;
-
+                color:@shark;
             }//a
     }//div
-
-
-
-
 }//close header
