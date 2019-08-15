@@ -211,6 +211,9 @@ header div a {
   font-weight: bold;
   color: #212529;
 }
+header div a:hover {
+  color: #65717e;
+}
 @media (max-width:500px) {
   header div {
     flex-direction: column;
